@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card"
+    app:strokeColor="@color/yelloww"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="5dp"
+    app:strokeWidth="3dp"
+    android:layout_marginBottom="16dp"
+    android:layout_marginRight="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Media -->
+
+        <ImageView
+            android:id="@+id/ImSrc"
+            app:srcCompat="@drawable/cow"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="200dp"
+            android:contentDescription="cattleDesc"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Title, secondary and supporting text -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Animal Name"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textColor="@color/redish4"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="⭐⭐⭐⭐⭐"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="?android:attr/textColorSecondary" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:text="Head of cattle and 920 breeds of cow in the world today. Cows are referred to as the 'fosters mothers to the human race."
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="?android:attr/textColorSecondary"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:text="98000 Rs"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="@color/redish1"
+                android:textSize="28sp"
+                android:textStyle="italic" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btnCall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:text="call"/>
+                <Button
+                    android:id="@+id/btnChat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="chat"/>
+            </LinearLayout>
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@color/orderColor"
+                android:padding="15dp"
+                android:id="@+id/doBid"
+                android:text="Record Proposal"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <!-- Buttons -->
+        <!--            <LinearLayout-->
+        <!--                android:layout_gravity="center"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_margin="8dp"-->
+        <!--                android:orientation="horizontal">-->
+
+        <!--                <com.google.android.material.button.MaterialButton-->
+        <!--                    android:id="@+id/bidOnAnimal"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_marginTop="18dp"-->
+        <!--                    android:layout_marginEnd="8dp"-->
+        <!--                    android:text="Bidding"-->
+        <!--               -->
+        <!--                    android:textAllCaps="false"-->
+        <!-- -->
+        <!--                 -->
+        <!--                    android:textStyle="normal" />-->
+
+        <!--                <com.google.android.material.button.MaterialButton-->
+        <!--                    android:id="@+id/AnimalDetails"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_marginTop="18dp"-->
+        <!--                    android:layout_marginEnd="8dp"-->
+        <!--                    android:text="More Info"-->
+        <!--                    android:textAllCaps="false"-->
+        <!--                     android:textStyle="normal" />-->
+
+
+        <!--            </LinearLayout>-->
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.buyer.BuyerDashboard">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.farmer.LiveStockDetailRecord">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/yellow" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/yellow"
+            android:text="Live Stock Record Details"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@drawable/waves" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="-15dp"
+            android:background="@color/yellow" />
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardCattle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/yellow"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Media -->
+
+                <!--                <ImageView-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="194dp"-->
+                <!--                    android:contentDescription="cattleDesc"-->
+                <!--                    android:scaleType="centerCrop"-->
+                <!--                    app:srcCompat="@drawable/new_cow_farm" />-->
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:padding="10dp"
+                android:text="Live Stock Record's"
+                android:textAlignment="gravity"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:layout_marginLeft="40dp"
+                android:padding="8dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male "
+                        android:textColor="@color/purple_300"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="90dp"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/tvMaleCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:text="0"
+                        android:textColor="@color/purple_300"
+                        android:textSize="15sp" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        android:textColor="@color/purple_300"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="90dp"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/tvFemaleCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:text="0"
+                        android:textColor="@color/purple_300"
+                        android:textSize="15sp" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_margin="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pregnant"
+                        android:textSize="15sp"
+                        android:textColor="@color/purple_300"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="90dp"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/tvPregnantCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:text="0"
+                        android:textColor="@color/purple_300"
+                        android:textSize="15sp" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_margin="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Fully Vaccinated"
+                        android:textColor="@color/purple_300"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="90dp"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/fullyVaccinatedCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:text="0"
+                        android:textColor="@color/purple_300"
+                        android:textSize="15sp" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_margin="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Non Vaccinated"
+                        android:textSize="15sp"
+                        android:textColor="@color/purple_300"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="90dp"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/nonVaccinated"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:text="0"
+                        android:textColor="@color/purple_300"
+                        android:textSize="15sp" />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_margin="8dp">
+
+                    <TextView
+                        android:id="@+id/firstBreedName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Red Sindhi Breed"
+                        android:textSize="15sp"
+                        android:textColor="@color/purple_300"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="90dp"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/firstBreedValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:text="0"
+                        android:textColor="@color/purple_300"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_margin="8dp">
+
+                    <TextView
+                        android:id="@+id/secondBreedName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Cholistani Breed"
+                        android:textSize="15sp"
+                        android:textColor="@color/purple_300"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="90dp"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/secondBreedValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:text="0"
+                        android:textColor="@color/purple_300"
+                        android:textSize="15sp" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_margin="8dp">
+
+                    <TextView
+                        android:id="@+id/thirdBreedName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Tharparkar Breed"
+                        android:textSize="15sp"
+                        android:textColor="@color/purple_300"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="90dp"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/thirdBreedValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:text="0"
+                        android:textColor="@color/purple_300"
+                        android:textSize="15sp" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_margin="8dp">
+
+                    <TextView
+                        android:id="@+id/fourthBreedName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Tharparkar Breed"
+                        android:textSize="15sp"
+                        android:textColor="@color/purple_300"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="90dp"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/fourthBreedValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:text="0"
+                        android:textColor="@color/purple_300"
+                        android:textSize="15sp" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_margin="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Total"
+                        android:textSize="15sp"
+                        android:textColor="@color/purple_300"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="90dp"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/totalLiveStock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:text="0"
+                        android:textColor="@color/purple_300"
+                        android:textSize="15sp" />
+                </TableRow>
+            </TableLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</ScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_dialog_email" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

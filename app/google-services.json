@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "342179185229",
+    "project_id": "e-qurbani",
+    "storage_bucket": "e-qurbani.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:342179185229:android:b8602e8fdd5337ed77d204",
+        "android_client_info": {
+          "package_name": "com.code.e_qurbani"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "342179185229-ror6839o8gisqd2vp20e1hj1vl25l3ti.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyjKF82RdC1rErYwzaB7n6V31FPDoq7OQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "342179185229-ror6839o8gisqd2vp20e1hj1vl25l3ti.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

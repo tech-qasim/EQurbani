@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">E-Qurbani</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="no_account">No Account?</string>
+
+    <string name="sign_up">Sign Up</string>
+    <string name="phone_no">Phone no.</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="profile_image">User Profile Image</string>
+
+    <!--    <string name="default_web_client_id">370944119419-lcf8s0uj0uhe74cckc2kt9sbekg17lm7.apps.googleusercontent.com</string>-->
+
+    <!--                                         370944119419-lcf8s0uj0uhe74cckc2kt9sbekg17lm7.apps.googleusercontent.com-->
+
+    <string name="first_name">User Name</string>
+    <string name="sl">-</string>
+    <string name="avaliable_products">Avaliable Products</string>
+    <string name="mohallah_jalal_a_bad_mansehra">Mohallah Jalal-a-bad Mansehra</string>
+    <string name="ahtezaz_shah">Ahtezaz Shah</string>
+    <string name="_03342545113">03342545113</string>
+</resources>

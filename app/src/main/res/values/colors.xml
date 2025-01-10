@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#6508D8</color>
+    <color name="purple_300">#A82F08</color>
+    <color name="purple_500">#3A36F6</color>
+    <color name="purple_700">#3A36F6</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="main">#3A36F6</color>
+    <color name="alarm">#B80303</color>
+    <color name="redish">#E10A0A</color>
+    <color name="dark_grey">#FFFF</color>
+    <color name="green">#0FD350</color>
+    <color name="yellow">#3A36F6</color>
+    <color name="orderColor">#4CAF50</color>
+    <color name="line_color">#122BC4</color>
+    <color name="blue">#162D75</color>
+    <color name="bidingColor">#8BC34A</color>
+    <color name="pureGreen">#5EA609</color>
+    <color name="saleColor">#D0D80C35</color>
+    <color name="yelloww">#D0E46402</color>
+
+    <color name="redish1">#CF2323</color>
+    <color name="redish4">#99149E</color>
+    <color name="redish2">#0CB5EA</color>
+    <color name="cardColor">#12345678</color>
+    <color name="yellow222">#0FD350</color>
+    <color name="colorAccent">#0FD350</color>
+</resources>
